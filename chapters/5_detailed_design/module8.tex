@@ -1,0 +1,31 @@
+\subsection{用户管理模块}
+
+\par 该模块使用\texttt{User}类（见表\ref{table:User}）对所有用户进行统一的管理。系统开始运行时，首先调用\texttt{ReadCSV}函数读取指定路径的用户数据文件，将用户数据写入用户列表\texttt{user\_table}中。
+
+\begin{table}[htb]
+    \centering
+    \caption{User类的主要成员和方法}
+    \label{table:User}
+    \begin{tabular}{|l|m{3cm}|m{4cm}|m{5cm}|}
+        \hline
+                            & \multicolumn{1}{c|}{名称}                & \multicolumn{1}{c|}{类型}                                        & \multicolumn{1}{c|}{功能}            \\
+        \hline
+        成员                  & \centering\arraybackslash user\_table  & \centering\arraybackslash map<username, tuple<password, role>> & \centering\arraybackslash 用户列表     \\ \hline
+        \multirow{7}{*}{方法} & \centering\arraybackslash GetUsername  & \centering\arraybackslash string                               & \centering\arraybackslash 获取用户名    \\ \cline{2-4}
+                            & \centering\arraybackslash GetRole      & \centering\arraybackslash int                                  & \centering\arraybackslash  获取用户角色  \\ \cline{2-4}
+                            & \centering\arraybackslash Authenticate & \centering\arraybackslash bool                                 & \centering\arraybackslash 验证用户登录凭证 \\ \cline{2-4}
+                            & \centering\arraybackslash DeleteUser   & \centering\arraybackslash void                                 & \centering\arraybackslash 删除用户     \\ \cline{2-4}
+                            & \centering\arraybackslash ChangeRole   & \centering\arraybackslash void                                 & \centering\arraybackslash 修改用户角色   \\ \cline{2-4}
+                            & \centering\arraybackslash ReadCSV      & \centering\arraybackslash map                                  & \centering\arraybackslash 读取用户数据文件 \\ \cline{2-4}
+                            & \centering\arraybackslash WriteCSV     & \centering\arraybackslash void                                 & \centering\arraybackslash 写入用户数据文件 \\ \hline
+    \end{tabular}
+\end{table}
+
+\par 用户注册功能允许新用户创建系统账户。在注册时，用户需要提供一个安全的登录凭证，包括用户名和密码。注册信息将被传送到系统，调用\texttt{Authenticate}函数进行验证，包括检查用户名是否唯一、密码是否符合安全标准。
+如果符合标准，则通过\texttt{GetUsername}函数检查用户名是否已经存在于用户列表中，若不存在则写入。一旦注册成功，用户将获得系统的访问权限。
+已注册的用户可以通过用户名和密码登录系统。登录成功后，用户将能够访问系统的各项功能和数据。
+
+\par 管理员登录后，可以对任意用户账户进行删除和角色管理操作。用户角色仅限于系统操作员、数据工程师、算法研究员和项目决策者，通过\texttt{ChangeRole}修改用户列表中每个用户名对应的\texttt{role}字段可以实现角色的修改。
+通过\texttt{DeleteUser}函数可以将待删除的账户移出用户列表。一旦账户被删除，用户将失去对系统的访问权限，可以确保用户数据的隐私和安全性。
+
+\par 通过明确的用户身份验证和角色管理，系统可以有效地防止未经授权的访问和操作，从而维护数据的完整性和保密性。

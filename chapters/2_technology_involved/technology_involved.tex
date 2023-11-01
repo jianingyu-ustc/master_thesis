@@ -1,0 +1,21 @@
+% !TeX root = ../main.tex
+
+\chapter{关键技术}
+
+本章节将逐一介绍构建实时三维重建及语义分割系统所需的关键技术，从相机位姿估计到深度学习模型，再到并行计算和图形渲染技术，为后续系统的设计与实现奠定理论与技术基础。
+
+\input{chapters/2_technology_involved/epipolar_geometry.tex}
+\input{chapters/2_technology_involved/kmax_deeplab.tex}
+\input{chapters/2_technology_involved/tsdf.tex}
+\input{chapters/2_technology_involved/parallel_computing.tex}
+\input{chapters/2_technology_involved/mvp_and_opengl.tex}
+
+\section{本章小结}
+\par 本章详细阐述了基于 RGB-D 相机的实时三维重建及语义分割系统的关键技术。
+首先，介绍了基于对极几何的相机位姿估计方法，为后续的三维重建提供了基本的空间信息。
+然后，详述了kMaX-DeepLab模型的特性和注意力机制，实现了对RGB图像的高效语义分割。
+接着，讨论了TSDF算法的应用，以及如何利用GPU架构与CUDA编程进行实时点云生成和语义融合。
+最后，对OpenGL的主要特点和渲染管线进行了深入研究，以满足系统的可视化需求。
+这些关键技术为系统的实现奠定了理论与技术基础。
+
+

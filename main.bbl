@@ -1,0 +1,492 @@
+\begin{thebibliography}{88}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{#1}
+\expandafter\ifx\csname urlstyle\endcsname\relax\else
+  \urlstyle{same}\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \DeclareUrlCommand\doi{\urlstyle{rm}}
+  \def\eprint#1#2{#2}
+\else
+  \def\doi#1{\href{https://doi.org/#1}{\nolinkurl{#1}}}
+  \let\eprint\href
+\fi
+
+\bibitem[葛树志(2019)]{jiqirenjianzhu_chuangxin}
+葛树志.
+\newblock 智能机器人在建筑行业的创新实践\allowbreak[J].
+\newblock 软件和集成电路, 2019\allowbreak (12): 2.
+
+\bibitem[刘洁\ 等(2022)刘洁, 刘星辰, and 徐卫国]{jiqirenjianzhu_hulian}
+刘洁, 刘星辰, 徐卫国.
+\newblock 互感、互知、互联——智能机器人时代的建筑\allowbreak[J].
+\newblock 当代建筑, 2022\allowbreak (6): 5.
+
+\bibitem[Warg et~al.(2023)Warg, Thorsén, Vu, and Bergenhem]{unifiedAV}
+WARG F, THORSéN A, VU V, et~al.
+\newblock A unified taxonomy for automated vehicles: Individual, cooperative, collaborative, on-road, and off-road\allowbreak[A].
+\newblock 2023.
+\newblock arXiv: \eprint{https://arxiv.org/abs/2304.02705}{2304.02705}.
+
+\bibitem[Kirillov et~al.(2019)Kirillov, He, Girshick, Rother, and Doll{\'a}r]{panopticsegmentation}
+KIRILLOV A, HE K, GIRSHICK R, et~al.
+\newblock Panoptic segmentation\allowbreak[C]//\allowbreak
+Proceedings of the IEEE/CVF conference on computer vision and pattern recognition.
+\newblock 2019: 9404-9413.
+
+\bibitem[Kang et~al.(2021)Kang, Wong, Lee, and Kim]{electronics10161960}
+KANG D, WONG A, LEE B, et~al.
+\newblock Real-time semantic segmentation of 3d point cloud for autonomous driving\allowbreak[J].
+\newblock Electronics, 2021, 10\allowbreak (16): 1960.
+
+\bibitem[Vargas et~al.(2021)Vargas, Alsweiss, Toker, Razdan, and Santos]{s21165397}
+VARGAS J, ALSWEISS S, TOKER O, et~al.
+\newblock An overview of autonomous vehicles sensors and their vulnerability to weather conditions\allowbreak[J].
+\newblock Sensors, 2021, 21\allowbreak (16): 5397.
+
+\bibitem[{Manuel Davila Delgado} et~al.(2022){Manuel Davila Delgado} and Oyedele]{MANUELDAVILADELGADO2022101787}
+{Manuel Davila Delgado} J, OYEDELE L.
+\newblock Robotics in construction: A critical review of the reinforcement learning and imitation learning paradigms\allowbreak[J].
+\newblock Advanced Engineering Informatics, 2022, 54: 101787.
+
+\bibitem[Andrews(2011)]{structuredlight}
+ANDREWS D~L.
+\newblock Structured light and its applications: An introduction to phase-structured beams and nanoscale optical forces\allowbreak[M].
+\newblock Academic press, 2011.
+
+\bibitem[Horaud et~al.(2016)Horaud, Hansard, Evangelidis, and M{\'{e}}nier]{timeoflight}
+HORAUD R, HANSARD M, EVANGELIDIS G, et~al.
+\newblock An overview of depth cameras and range scanners based on time-of-flight technologies\allowbreak[J].
+\newblock Machine Vision and Applications, 2016, 27\allowbreak (7): 1005-1020.
+
+\bibitem[Kim et~al.(2016)Kim, Leutenegger, and Davison]{kim2016real}
+KIM H, LEUTENEGGER S, DAVISON A~J.
+\newblock Real-time 3d reconstruction and 6-dof tracking with an event camera\allowbreak[C]//\allowbreak
+Computer Vision--ECCV 2016: 14th European Conference, Amsterdam, The Netherlands, October 11-14, 2016, Proceedings, Part VI 14.
+\newblock Springer, 2016: 349-364.
+
+\bibitem[Endres et~al.(2013)Endres, Hess, Sturm, Cremers, and Burgard]{endres20133}
+ENDRES F, HESS J, STURM J, et~al.
+\newblock 3-d mapping with an rgb-d camera\allowbreak[J].
+\newblock IEEE transactions on robotics, 2013, 30\allowbreak (1): 177-187.
+
+\bibitem[Taketomi et~al.(2017)Taketomi, Uchiyama, and Ikeda]{taketomi2017visual}
+TAKETOMI T, UCHIYAMA H, IKEDA S.
+\newblock Visual slam algorithms: A survey from 2010 to 2016\allowbreak[J].
+\newblock IPSJ Transactions on Computer Vision and Applications, 2017, 9\allowbreak (1): 1-11.
+
+\bibitem[Yang et~al.(2021)Yang, Yuan, Zhu, Chi, Li, and Liao]{EfficientRGB-DSLAM}
+YANG X, YUAN Z, ZHU D, et~al.
+\newblock Robust and efficient rgb-d slam in dynamic environments\allowbreak[J].
+\newblock IEEE Transactions on Multimedia, 2021, 23: 4208-4219.
+
+\bibitem[Supancic et~al.(2015)Supancic, Rogez, Yang, Shotton, and Ramanan]{supancic2015depth}
+SUPANCIC J~S, ROGEZ G, YANG Y, et~al.
+\newblock Depth-based hand pose estimation: data, methods, and challenges\allowbreak[C]//\allowbreak
+Proceedings of the IEEE international conference on computer vision.
+\newblock 2015: 1868-1876.
+
+\bibitem[Ge et~al.(2018)Ge, Liang, Yuan, and Thalmann]{ge2018real}
+GE L, LIANG H, YUAN J, et~al.
+\newblock Real-time 3d hand pose estimation with 3d convolutional neural networks\allowbreak[J].
+\newblock IEEE transactions on pattern analysis and machine intelligence, 2018, 41\allowbreak (4): 956-970.
+
+\bibitem[Alkhawaja et~al.(2023)Alkhawaja, Jaradat, and Romdhane]{alkhawaja_jaradat_romdhane_2023}
+ALKHAWAJA F, JARADAT M~A, ROMDHANE L.
+\newblock Low-cost depth/imu intelligent sensor fusion for indoor robot navigation\allowbreak[J].
+\newblock Robotica, 2023, 41\allowbreak (6): 1689–1717.
+
+\bibitem[Campbell et~al.(2010)Campbell, Egerstedt, How, and Murray]{rgbd_ad}
+CAMPBELL M, EGERSTEDT M, HOW J, et~al.
+\newblock Autonomous driving in urban environments: Approaches, lessons and challenges\allowbreak[J].
+\newblock Philosophical transactions. Series A, Mathematical, physical, and engineering sciences, 2010, 368: 4649-72.
+
+\bibitem[Valenzuela et~al.(2021)Valenzuela, Sibuet, Hornero, and Casas]{rgbd_respiratory}
+VALENZUELA A, SIBUET N, HORNERO G, et~al.
+\newblock Non-contact video-based assessment of the respiratory function using a rgb-d camera\allowbreak[J].
+\newblock Sensors, 2021, 21\allowbreak (16): 5605.
+
+\bibitem[Everingham et~al.(2015)Everingham, Eslami, Van~Gool, Williams, Winn, and Zisserman]{pascal}
+EVERINGHAM M, ESLAMI S, VAN~GOOL L, et~al.
+\newblock The pascal visual object classes challenge: A retrospective\allowbreak[J].
+\newblock International Journal of Computer Vision, 2015, 111: 98-136.
+
+\bibitem[Liu et~al.(2010)Liu, Yuen, and Torralba]{sift_flow}
+LIU C, YUEN J, TORRALBA A.
+\newblock Sift flow: Dense correspondence across scenes and its applications\allowbreak[J].
+\newblock IEEE transactions on pattern analysis and machine intelligence, 2010, 33\allowbreak (5): 978-994.
+
+\bibitem[Shotton et~al.(2006)Shotton, Winn, Rother, and Criminisi]{textonboost}
+SHOTTON J, WINN J, ROTHER C, et~al.
+\newblock Textonboost: Joint appearance, shape and context modeling for multi-class object recognition and segmentation\allowbreak[C]//\allowbreak
+Computer Vision--ECCV 2006: 9th European Conference on Computer Vision, Graz, Austria, May 7-13, 2006. Proceedings, Part I 9.
+\newblock Springer, 2006: 1-15.
+
+\bibitem[Badrinarayanan et~al.(2017)Badrinarayanan, Kendall, and Cipolla]{segnet}
+BADRINARAYANAN V, KENDALL A, CIPOLLA R.
+\newblock Segnet: A deep convolutional encoder-decoder architecture for image segmentation\allowbreak[J].
+\newblock IEEE transactions on pattern analysis and machine intelligence, 2017, 39\allowbreak (12): 2481-2495.
+
+\bibitem[Chen et~al.(2017)Chen, Papandreou, Kokkinos, Murphy, and Yuille]{deeplab}
+CHEN L~C, PAPANDREOU G, KOKKINOS I, et~al.
+\newblock Deeplab: Semantic image segmentation with deep convolutional nets, atrous convolution, and fully connected crfs\allowbreak[J].
+\newblock IEEE transactions on pattern analysis and machine intelligence, 2017, 40\allowbreak (4): 834-848.
+
+\bibitem[Weber et~al.(2021)Weber, Wang, Qiao, Xie, Collins, Zhu, Yuan, Kim, Yu, Cremers, Leal-Taixe, Yuille, Schroff, Adam, and Chen]{deeplab2}
+WEBER M, WANG H, QIAO S, et~al.
+\newblock Deeplab2: A tensorflow library for deep labeling\allowbreak[A].
+\newblock 2021.
+\newblock arXiv: \eprint{https://arxiv.org/abs/2106.09748}{2106.09748}.
+
+\bibitem[Chen et~al.(2018)Chen, Zhu, Papandreou, Schroff, and Adam]{deeplab3plus}
+CHEN L~C, ZHU Y, PAPANDREOU G, et~al.
+\newblock Encoder-decoder with atrous separable convolution for semantic image segmentation\allowbreak[C]//\allowbreak
+Proceedings of the European conference on computer vision.
+\newblock 2018: 801-818.
+
+\bibitem[Kirillov et~al.(2023)Kirillov, Mintun, Ravi, Mao, Rolland, Gustafson, Xiao, Whitehead, Berg, Lo, Dollár, and Girshick]{segment_anything}
+KIRILLOV A, MINTUN E, RAVI N, et~al.
+\newblock Segment anything\allowbreak[A].
+\newblock 2023.
+\newblock arXiv: \eprint{https://arxiv.org/abs/2304.02643}{2304.02643}.
+
+\bibitem[Zhao et~al.(2017)Zhao, Shi, Qi, Wang, and Jia]{pspnet}
+ZHAO H, SHI J, QI X, et~al.
+\newblock Pyramid scene parsing network\allowbreak[C]//\allowbreak
+Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition.
+\newblock 2017: 2881-2890.
+
+\bibitem[Hung et~al.(2017)Hung, Tsai, Shen, Lin, Sunkavalli, Lu, and Yang]{SceneParsing}
+HUNG W~C, TSAI Y~H, SHEN X, et~al.
+\newblock Scene parsing with global context embedding\allowbreak[C]//\allowbreak
+Proceedings of the IEEE International Conference on Computer Vision.
+\newblock 2017: 2631-2639.
+
+\bibitem[Chen et~al.(2018)Chen, Wang, Peng, Zhang, Yu, and Sun]{CascadedPyramidNetwork}
+CHEN Y, WANG Z, PENG Y, et~al.
+\newblock Cascaded pyramid network for multi-person pose estimation\allowbreak[C]//\allowbreak
+2018: 7103-7112.
+
+\bibitem[Bushong et~al.(2003)Bushong and Clarke]{bushong2003magnetic}
+BUSHONG S~C, CLARKE G.
+\newblock Magnetic resonance imaging: physical and biological principles\allowbreak[M].
+\newblock Elsevier Health Sciences, 2003.
+
+\bibitem[Song et~al.(2017)Song, Han, Zhao, Wang, and Du]{song2017review}
+SONG G, HAN J, ZHAO Y, et~al.
+\newblock A review on medical image registration as an optimization problem\allowbreak[J].
+\newblock Current Medical Imaging, 2017, 13\allowbreak (3): 274-283.
+
+\bibitem[Stotko et~al.(2019)Stotko, Krumpen, Hullin, Weinmann, and Klein]{SLAMCast}
+STOTKO P, KRUMPEN S, HULLIN M~B, et~al.
+\newblock Slamcast: Large-scale, real-time 3d reconstruction and streaming for immersive multi-client live telepresence\allowbreak[J].
+\newblock IEEE Transactions on Visualization and Computer Graphics, 2019, 25\allowbreak (5): 2102-2112.
+
+\bibitem[Hasenfratz et~al.(2003)Hasenfratz, Lapierre, Holzschuch, and Sillion]{hasenfratz2003survey}
+HASENFRATZ J~M, LAPIERRE M, HOLZSCHUCH N, et~al.
+\newblock A survey of real-time soft shadows algorithms\allowbreak[C]//\allowbreak
+Computer Graphics Forum: volume~22.
+\newblock 2003: 753-774.
+
+\bibitem[Finance et~al.(2015)Finance and Zwerman]{finance2015visual}
+FINANCE C, ZWERMAN S.
+\newblock The visual effects producer: Understanding the art and business of vfx\allowbreak[M].
+\newblock CRC Press, 2015.
+
+\bibitem[Cavallari et~al.(2019)Cavallari, Golodetz, Lord, Valentin, Prisacariu, Di~Stefano, and Torr]{cavallari2019real}
+CAVALLARI T, GOLODETZ S, LORD N~A, et~al.
+\newblock Real-time rgb-d camera pose estimation in novel scenes using a relocalisation cascade\allowbreak[J].
+\newblock IEEE transactions on pattern analysis and machine intelligence, 2019, 42\allowbreak (10): 2465-2477.
+
+\bibitem[Newcombe et~al.(2015)Newcombe, Fox, and Seitz]{Dynamicfusion}
+NEWCOMBE R~A, FOX D, SEITZ S~M.
+\newblock Dynamicfusion: Reconstruction and tracking of non-rigid scenes in real-time\allowbreak[C]//\allowbreak
+Proceedings of the IEEE conference on computer vision and pattern recognition.
+\newblock 2015: 343-352.
+
+\bibitem[Dou et~al.(2016)Dou, Khamis, Degtyarev, Davidson, Fanello, Kowdle, Escolano, Rhemann, Kim, Taylor, et~al.]{Fusion4d}
+DOU M, KHAMIS S, DEGTYAREV Y, et~al.
+\newblock Fusion4d: Real-time performance capture of challenging scenes\allowbreak[J].
+\newblock ACM Transactions on Graphics (ToG), 2016, 35\allowbreak (4): 1-13.
+
+\bibitem[Curless et~al.(1996)Curless and Levoy]{VolumetricMethod}
+CURLESS B, LEVOY M.
+\newblock A volumetric method for building complex models from range images\allowbreak[C]//\allowbreak
+Proceedings of the 23rd annual conference on Computer graphics and interactive techniques.
+\newblock 1996: 303-312.
+
+\bibitem[Rusinkiewicz et~al.(2002)Rusinkiewicz, Hall-Holt, and Levoy]{rusinkiewicz2002real}
+RUSINKIEWICZ S, HALL-HOLT O, LEVOY M.
+\newblock Real-time 3d model acquisition\allowbreak[J].
+\newblock ACM Transactions on Graphics (TOG), 2002, 21\allowbreak (3): 438-446.
+
+\bibitem[Newcombe et~al.(2011)Newcombe, Izadi, Hilliges, Molyneaux, Kim, Davison, Kohi, Shotton, Hodges, and Fitzgibbon]{newcombe2011kinectfusion}
+NEWCOMBE R~A, IZADI S, HILLIGES O, et~al.
+\newblock Kinectfusion: Real-time dense surface mapping and tracking\allowbreak[C]//\allowbreak
+2011 10th IEEE international symposium on mixed and augmented reality.
+\newblock Ieee, 2011: 127-136.
+
+\bibitem[Izadi et~al.(2011)Izadi, Kim, Hilliges, Molyneaux, Newcombe, Kohli, Shotton, Hodges, Freeman, Davison, et~al.]{izadi2011kinectfusion}
+IZADI S, KIM D, HILLIGES O, et~al.
+\newblock Kinectfusion: real-time 3d reconstruction and interaction using a moving depth camera\allowbreak[C]//\allowbreak
+Proceedings of the 24th annual ACM symposium on User interface software and technology.
+\newblock 2011: 559-568.
+
+\bibitem[Whelan et~al.(2016)Whelan, Salas-Moreno, Glocker, Davison, and Leutenegger]{whelan2016elasticfusion}
+WHELAN T, SALAS-MORENO R~F, GLOCKER B, et~al.
+\newblock Elasticfusion: Real-time dense slam and light source estimation\allowbreak[J].
+\newblock The International Journal of Robotics Research, 2016, 35\allowbreak (14): 1697-1716.
+
+\bibitem[Vicini et~al.(2021)Vicini, Jakob, and Kaplanyan]{vicini2021non}
+VICINI D, JAKOB W, KAPLANYAN A.
+\newblock A non-exponential transmittance model for volumetric scene representations\allowbreak[J].
+\newblock ACM Transactions on Graphics (TOG), 2021, 40\allowbreak (4): 1-16.
+
+\bibitem[Hornung et~al.(2013)Hornung, Wurm, Bennewitz, Stachniss, and Burgard]{hornung2013octomap}
+HORNUNG A, WURM K~M, BENNEWITZ M, et~al.
+\newblock Octomap: An efficient probabilistic 3d mapping framework based on octrees\allowbreak[J].
+\newblock Autonomous robots, 2013, 34: 189-206.
+
+\bibitem[Whelan et~al.(2012)Whelan, McDonald, Kaess, Fallon, Johannsson, and Leonard]{whelan2012kintinuous}
+WHELAN T, MCDONALD J, KAESS M, et~al.
+\newblock Kintinuous: Spatially extended kinectfusion\allowbreak[M]//\allowbreak
+Proceedings of RSS '12 Workshop on RGB-D: Advanced Reasoning with Depth Cameras.
+\newblock 2012: 4-6.
+
+\bibitem[Armeni et~al.(2016)Armeni, Sener, Zamir, Jiang, Brilakis, Fischer, and Savarese]{3DSemanticParsing}
+ARMENI I, SENER O, ZAMIR A~R, et~al.
+\newblock 3d semantic parsing of large-scale indoor spaces\allowbreak[C]//\allowbreak
+2016 IEEE Conference on Computer Vision and Pattern Recognition.
+\newblock 2016: 1534-1543.
+
+\bibitem[Roynard et~al.(2018)Roynard, Deschaud, and Goulette]{parislille3d}
+ROYNARD X, DESCHAUD J~E, GOULETTE F.
+\newblock Paris-lille-3d: A large and high-quality ground-truth urban point cloud dataset for automatic segmentation and classification\allowbreak[J].
+\newblock The International Journal of Robotics Research, 2018, 37\allowbreak (6): 545-557.
+
+\bibitem[Qi et~al.(2017)Qi, Su, Mo, and Guibas]{pointnet}
+QI C~R, SU H, MO K, et~al.
+\newblock Pointnet: Deep learning on point sets for 3d classification and segmentation\allowbreak[C]//\allowbreak
+Proceedings of the IEEE conference on computer vision and pattern recognition.
+\newblock 2017: 652-660.
+
+\bibitem[Qi et~al.(2017)Qi, Yi, Su, and Guibas]{pointnet++}
+QI C~R, YI L, SU H, et~al.
+\newblock Pointnet++: Deep hierarchical feature learning on point sets in a metric space\allowbreak[J].
+\newblock Advances in neural information processing systems, 2017, 30.
+
+\bibitem[Li et~al.(2018)Li, Bu, Sun, Wu, Di, and Chen]{PointCNN}
+LI Y, BU R, SUN M, et~al.
+\newblock Pointcnn: Convolution on x-transformed points\allowbreak[J].
+\newblock Advances in neural information processing systems, 2018, 31.
+
+\bibitem[Narita et~al.(2019)Narita, Seno, Ishikawa, and Kaji]{panopticfusion}
+NARITA G, SENO T, ISHIKAWA T, et~al.
+\newblock Panopticfusion: Online volumetric semantic mapping at the level of stuff and things\allowbreak[J].
+\newblock 2019 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2019: 4205-4212.
+
+\bibitem[Oleynikova et~al.(2017)Oleynikova, Taylor, Fehr, Siegwart, and Nieto]{voxblox}
+OLEYNIKOVA H, TAYLOR Z, FEHR M, et~al.
+\newblock Voxblox: Incremental 3d euclidean signed distance fields for on-board {MAV} planning\allowbreak[C]//\allowbreak
+2017 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS).
+\newblock IEEE, 2017: 1366-1373.
+
+\bibitem[Grinvald et~al.(2019)Grinvald, Furrer, Novkovic, Chung, Cadena, Siegwart, and Nieto]{voxblox++}
+GRINVALD M, FURRER F, NOVKOVIC T, et~al.
+\newblock Volumetric instance-aware semantic mapping and 3d object discovery\allowbreak[J].
+\newblock IEEE Robotics and Automation Letters, 2019, 4\allowbreak (3): 3037-3044.
+
+\bibitem[Han et~al.(2021)Han, Zhang, Jiao, Xie, Zhu, Zhu, and Liu]{ReconstructingInteractive3D}
+HAN M, ZHANG Z, JIAO Z, et~al.
+\newblock Reconstructing interactive 3d scenes by panoptic mapping and cad model alignments\allowbreak[C]//\allowbreak
+2021 IEEE International Conference on Robotics and Automation.
+\newblock IEEE, 2021: 12199-12206.
+
+\bibitem[Menini et~al.(2022)Menini, Kumar, Oswald, Sandström, Sminchisescu, and Van~Gool]{OnlineSegFusion}
+MENINI D, KUMAR S, OSWALD M~R, et~al.
+\newblock A real-time online learning framework for joint 3d reconstruction and semantic segmentation of indoor scenes\allowbreak[J].
+\newblock IEEE Robotics and Automation Letters, 2022, 7\allowbreak (2): 1332-1339.
+
+\bibitem[Nie{\ss}ner et~al.(2013)Nie{\ss}ner, Zollh{\"o}fer, Izadi, and Stamminger]{VoxelHashing}
+NIE{SS}NER M, ZOLLH{\"O}FER M, IZADI S, et~al.
+\newblock Real-time 3d reconstruction at scale using voxel hashing\allowbreak[J].
+\newblock ACM Transactions on Graphics (ToG), 2013, 32\allowbreak (6): 1-11.
+
+\bibitem[Chen et~al.(2013)Chen, Bautembach, and Izadi]{Real-TimeVolumetric}
+CHEN J, BAUTEMBACH D, IZADI S.
+\newblock Scalable real-time volumetric surface reconstruction\allowbreak[J].
+\newblock ACM Transactions on Graphics (ToG), 2013, 32\allowbreak (4): 1-16.
+
+\bibitem[Steinbrucker et~al.(2013)Steinbrucker, Kerl, Cremers, and Sturm]{Multi-resolutionSurfaceReconstruction}
+STEINBRUCKER F, KERL C, CREMERS D, et~al.
+\newblock Large-scale multi-resolution surface reconstruction from rgb-d sequences\allowbreak[C]//\allowbreak
+2013 IEEE International Conference on Computer Vision.
+\newblock 2013: 3264-3271.
+
+\bibitem[Denkowski(2013)]{GPUAccelerated}
+DENKOWSKI M.
+\newblock Gpu accelerated 3d object reconstruction\allowbreak[J].
+\newblock Procedia Computer Science, 2013, 18: 290-298.
+
+\bibitem[Kim et~al.(2020)Kim, Woo, Lee, and Kweon]{VideoPanopticSegmentation}
+KIM D, WOO S, LEE J~Y, et~al.
+\newblock Video panoptic segmentation\allowbreak[C]//\allowbreak
+Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition.
+\newblock 2020: 9859-9868.
+
+\bibitem[Zhang(1998)]{epipolar}
+ZHANG Z.
+\newblock Determining the epipolar geometry and its uncertainty: A review\allowbreak[J].
+\newblock International journal of computer vision, 1998, 27: 161-195.
+
+\bibitem[Yu et~al.(2022)Yu, Wang, Qiao, Collins, Zhu, Adam, Yuille, and Chen]{kmeans_mask_transformer}
+YU Q, WANG H, QIAO S, et~al.
+\newblock k-means mask transformer\allowbreak[C]//\allowbreak
+AVIDAN S, BROSTOW G, CISS{\'E} M, et~al.
+\newblock Computer Vision -- ECCV 2022.
+\newblock Cham: Springer Nature Switzerland, 2022: 288-307.
+
+\bibitem[Wang et~al.(2021)Wang, Zhu, Adam, Yuille, and Chen]{mask_transformer}
+WANG H, ZHU Y, ADAM H, et~al.
+\newblock Max-deeplab: End-to-end panoptic segmentation with mask transformers\allowbreak[C]//\allowbreak
+Proceedings of the IEEE/CVF conference on computer vision and pattern recognition.
+\newblock 2021: 5463-5474.
+
+\bibitem[Yu et~al.(2022)Yu, Wang, Kim, Qiao, Collins, Zhu, Adam, Yuille, and Chen]{cluster_mask_transformer}
+YU Q, WANG H, KIM D, et~al.
+\newblock Cmt-deeplab: Clustering mask transformers for panoptic segmentation\allowbreak[C]//\allowbreak
+2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition.
+\newblock 2022: 2550-2560.
+
+\bibitem[Werner et~al.(2014)Werner, Al-Hamadi, and Werner]{tsdf}
+WERNER D, AL-HAMADI A, WERNER P.
+\newblock Truncated signed distance function: experiments on voxel size\allowbreak[C]//\allowbreak
+Image Analysis and Recognition: 11th International Conference, ICIAR 2014, Vilamoura, Portugal, October 22-24, 2014, Proceedings, Part II 11.
+\newblock Springer, 2014: 357-364.
+
+\bibitem[{NVIDIA Corporation}(2023)]{nvidia_cuda}
+{NVIDIA Corporation}.
+\newblock Cuda toolkit documentation\allowbreak[EB/OL].
+\newblock 2023.
+\newblock \url{https://docs.nvidia.com/cuda/}.
+
+\bibitem[Segal et~al.(2021)Segal and Akeley]{OpenGL_graphics_system}
+SEGAL M, AKELEY K.
+\newblock The opengl graphics system: A specification (version 4.6 (core profile)-october 22, 2019)\allowbreak[J].
+\newblock The Khronos Group Inc.[cit. 2020-12-05]. Dostupn{\'e} z: https://www. khronos. org/registry/0penGL/specs/gl/glspec46. core. pdf, 2021.
+
+\bibitem[Schonberger et~al.(2016)Schonberger and Frahm]{schonberger2016structure}
+SCHONBERGER J~L, FRAHM J~M.
+\newblock Structure-from-motion revisited\allowbreak[C]//\allowbreak
+Proceedings of the IEEE conference on computer vision and pattern recognition.
+\newblock 2016: 4104-4113.
+
+\bibitem[Furukawa et~al.(2015)Furukawa, Hern{\'a}ndez, et~al.]{furukawa2015multi}
+FURUKAWA Y, HERN{\'A}NDEZ C, et~al.
+\newblock Multi-view stereo: A tutorial\allowbreak[J].
+\newblock Foundations and Trends{\textregistered} in Computer Graphics and Vision, 2015, 9\allowbreak (1-2): 1-148.
+
+\bibitem[Kuhn(1955)]{hungarian}
+KUHN H~W.
+\newblock The hungarian method for the assignment problem\allowbreak[J].
+\newblock Naval Research Logistics Quarterly, 1955, 2\allowbreak (1-2): 83-97.
+
+\bibitem[Zeng et~al.(2017)Zeng, Song, Nie{\ss}ner, Fisher, Xiao, and Funkhouser]{zeng20163dmatch}
+ZENG A, SONG S, NIE{SS}NER M, et~al.
+\newblock 3dmatch: Learning local geometric descriptors from rgb-d reconstructions\allowbreak[C]//\allowbreak
+Proceedings of the IEEE conference on computer vision and pattern recognition.
+\newblock 2017: 1802-1811.
+
+\bibitem[Raivio et~al.(2022)Raivio and Rahtu]{online_panoptic_3d}
+RAIVIO L, RAHTU E.
+\newblock Online panoptic 3d reconstruction as a linear assignment problem\allowbreak[C]//\allowbreak
+SCLAROFF S, DISTANTE C, LEO M, et~al.
+\newblock Image Analysis and Processing -- ICIAP 2022.
+\newblock Cham: Springer International Publishing, 2022: 39-50.
+
+\bibitem[Rusu et~al.(2011)Rusu and Cousins]{pcl}
+RUSU R~B, COUSINS S.
+\newblock 3d is here: Point cloud library (pcl)\allowbreak[C]//\allowbreak
+2011 IEEE International Conference on Robotics and Automation.
+\newblock Shanghai, China, 2011: 1-4.
+
+\bibitem[Zhou et~al.(2018)Zhou, Park, and Koltun]{open3d}
+ZHOU Q~Y, PARK J, KOLTUN V.
+\newblock Open3d: A modern library for 3d data processing\allowbreak[Z].
+\newblock 2018.
+
+\bibitem[Daude et~al.(2008)Daude, Emmert, Lafon, and Bailly]{CompressibleLES}
+DAUDE F, EMMERT T, LAFON P, et~al.
+\newblock A high-order algorithm for compressible les in caa applications\allowbreak[J].
+\newblock AIAA Papers, 2008: 3049.
+
+\bibitem[Mohan et~al.(2021)Mohan and Valada]{EfficientPS}
+MOHAN R, VALADA A.
+\newblock Efficientps: Efficient panoptic segmentation\allowbreak[J].
+\newblock International Journal of Computer Vision, 2021, 129\allowbreak (5): 1551-1579.
+
+\bibitem[Geiger et~al.(2013)Geiger, Lenz, Stiller, and Urtasun]{kitti}
+GEIGER A, LENZ P, STILLER C, et~al.
+\newblock Vision meets robotics: The kitti dataset\allowbreak[J].
+\newblock The International Journal of Robotics Research, 2013, 32\allowbreak (11): 1231-1237.
+
+\bibitem[Cordts et~al.(2016)Cordts, Omran, Ramos, Rehfeld, Enzweiler, Benenson, Franke, Roth, and Schiele]{Cityscapes}
+CORDTS M, OMRAN M, RAMOS S, et~al.
+\newblock The cityscapes dataset for semantic urban scene understanding\allowbreak[C]//\allowbreak
+Proceedings of the IEEE conference on computer vision and pattern recognition.
+\newblock 2016: 3213-3223.
+
+\bibitem[Dai et~al.(2017)Dai, Chang, Savva, Halber, Funkhouser, and Nie{\ss}ner]{scannet}
+DAI A, CHANG A~X, SAVVA M, et~al.
+\newblock Scannet: Richly-annotated 3d reconstructions of indoor scenes\allowbreak[C]//\allowbreak
+Proceedings of the IEEE conference on computer vision and pattern recognition.
+\newblock 2017: 5828-5839.
+
+\bibitem[Dai et~al.(2017)Dai, Nie\ss{}ner, Zollh\"{o}fer, Izadi, and Theobalt]{bundlefusion}
+DAI A, NIE\SS{}NER M, ZOLLH\"{o}FER M, et~al.
+\newblock Bundlefusion: Real-time globally consistent 3d reconstruction using on-the-fly surface reintegration\allowbreak[J].
+\newblock ACM Transactions on Graphics, 2017, 36\allowbreak (3): 1.
+
+\bibitem[DeepLab2()]{kmax_deeplab_result}
+DEEPLAB2.
+\newblock kmax-deeplab performance in cityscapes val set results\allowbreak[EB/OL].
+\newblock \url{https://github.com/google-research/deeplab2/blob/main/g3doc/projects/kmax_deeplab.md#cityscapes-panopticsemanticinstance-segmentation}.
+
+\bibitem[Bovet et~al.(2005)Bovet and Cesati]{linux_kernel}
+BOVET D~P, CESATI M.
+\newblock Understanding the linux kernel: from i/o ports to process management\allowbreak[M].
+\newblock " O'Reilly Media, Inc.", 2005.
+
+\bibitem[Blackert(2016)]{MultiThreadingVulkan}
+BLACKERT A.
+\newblock Evaluation of multi-threading in vulkan\allowbreak[C]//\allowbreak
+2016.
+
+\bibitem[Mur-Artal et~al.(2017)Mur-Artal and Tardos]{orb_slam2}
+MUR-ARTAL R, TARDOS J~D.
+\newblock {ORB}-{SLAM}2: An open-source {SLAM} system for monocular, stereo, and {RGB}-d cameras\allowbreak[J].
+\newblock {IEEE} Transactions on Robotics, 2017, 33\allowbreak (5): 1255-1262.
+
+\bibitem[Zhang et~al.(2014)Zhang and Singh]{loam}
+ZHANG J, SINGH S.
+\newblock Loam: Lidar odometry and mapping in real-time.\allowbreak[C]//\allowbreak
+Robotics: Science and systems: volume~2.
+\newblock Berkeley, CA, 2014: 1-9.
+
+\bibitem[Ahmed et~al.(2015)Ahmed, Mohamad, Marshall, and Greenspan]{virtual_interest_points}
+AHMED M~T, MOHAMAD M, MARSHALL J~A, et~al.
+\newblock Registration of noisy point clouds using virtual interest points\allowbreak[C]//\allowbreak
+2015 12th Conference on Computer and Robot Vision.
+\newblock IEEE, 2015: 31-38.
+
+\bibitem[Xie et~al.(2021)Xie, Wang, Yu, Anandkumar, Alvarez, and Luo]{segformer}
+XIE E, WANG W, YU Z, et~al.
+\newblock Segformer: Simple and efficient design for semantic segmentation with transformers\allowbreak[J].
+\newblock Advances in Neural Information Processing Systems, 2021, 34: 12077-12090.
+
+\bibitem[Hassanin et~al.(2022)Hassanin, Anwar, Radwan, Khan, and Mian]{visual_attention}
+HASSANIN M, ANWAR S, RADWAN I, et~al.
+\newblock Visual attention methods in deep learning: An in-depth survey\allowbreak[A].
+\newblock 2022.
+\newblock arXiv: \eprint{https://arxiv.org/abs/2204.07756}{2204.07756}.
+
+\end{thebibliography}

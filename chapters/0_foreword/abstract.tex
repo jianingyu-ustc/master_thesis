@@ -1,0 +1,39 @@
+% !TeX root = ../main.tex
+
+\ustcsetup{
+	keywords = {三维重建, 语义分割, 线性分配, 空间网格划分, GPU加速},
+	keywords* = {3D reconstruction, Semantic segmentation, Linear assignment, Spatial grid partition, GPU acceleration},
+}
+
+\begin{abstract}
+	% \par 随着人工智能技术和智能机器人技术的发展，对真实世界场景进行三维重建和语义分割的技术已经应用到我们的生活和工业生产的方方面面。然而，现有的三维重建及语义分割系统多数为非实时处理系统，所有数据需要在同一时间获取，无法即时处理连续输入的视频流，并且只能对固定范围内的场景进行重建和分割，对于超出一定尺寸的场景则无法处理。因此，现有的三维重建及语义分割系统在实时处理、增量处理上的缺陷，是限制智能机器人大规模商业化应用的重要因素之一。
+	% \par 本文针对上述问题，设计并开发了一个基于 RGB-D 相机的实时三维重建及语义分割系统，包含数据采集、预处理、位姿估计、语义分割、点云生成、语义融合、实时可视化、后处理和导入导出功能，支持实时、增量地对相机周围的真实场景进行三维点云重建和语义分割。首先，系统从 RGB-D 相机获取RGB图像和深度图像，通过预训练的 kMaX-DeepLab（k-means Mask Transformer）模型对RGB图像进行语义分割，使用对极几何算法进行相机位姿估计。其次，使用截断符号距离函数（truncated signed distance function，TSDF）算法生成点云数据，同时使用线性分配算法实现点云数据的语义融合与更新，这个过程可以实时地进行可视化展示。最后，对生成的点云模型进行滤波降噪、下采样和曲面重建等后处理操作，导出为 PLY 格式的点云数据文件。
+	% \par 系统采用行业最新的点云语义分割算法，将语义融合、更新的过程转换为一个线性分配问题（linear assignment problem，LAP），与点云生成过程分离，并对其做出改进，提出场景空间划分的思想，以支持大范围场景的增量式重建。系统将点云生成及语义融合、更新的全过程迁移至图形处理器（graphics processing unit，GPU）实现，显著地提高了处理的速度，可以应用于室内重建、工业生产及自动驾驶等多个应用场景。
+
+	\par 对动态范围场景进行实时性、增量式重建的三维重建及语义分割系统正在逐渐成为智能机器人和三维重建领域研究的焦点。然而，现有的相关系统多数为对固定范围场景进行非实时性、全量性重建的系统。这些系统需要在重建前读取全部数据，无法即时处理时序输入的连续视频流；
+	重建范围有限，超出预设范围后的物体则无法处理；无论场景内容发生多少变化，每次都需要重新处理整个场景；并且重建速度过慢，无法快速响应输入的数据。这些问题在很大程度上限制了智能机器人的大规模应用。
+
+	\par 本文针对上述问题，设计并开发了基于RGB-D相机的实时三维重建及语义分割系统。系统利用高效的点云语义分割算法，将语义融合、更新的过程转换为一个线性分配问题，与点云生成过程分离，实现实时语义分割的功能。
+	本文结合空间网格的思想，在系统中使用重叠空间网格划分的方法对场景空间进行划分，实现对动态范围场景进行增量式重建的功能。
+	此外，系统将点云生成及语义融合、更新的全过程迁移至图形处理器实现，显著地提高了处理的速度。
+
+	\par 该系统主要包含数据采集、位姿估计、语义分割、点云生成、语义融合和实时可视化等功能。
+	首先，系统利用 RGB-D 相机获取RGB图像和深度图像，通过预训练的 kMaX-DeepLab（k-Means Mask Transformer）模型对RGB图像进行语义分割，利用对极几何算法进行相机位姿估计。
+	其次，采取截断符号距离函数算法生成点云数据，
+	同时融入线性分配方法实现点云数据的语义融合与更新，并将此过程进行实时可视化展示。
+	最后，对生成的点云模型进行滤波降噪、下采样和曲面重建等后处理操作，导出为主流格式的点云数据文件。
+
+	\par 系统具有快速、高效、灵活处理大范围场景的能力，
+	能够对动态范围场景进行实时性、增量式的三维重建及语义分割，
+	并保持了较高的重建精度，可以应用于室内重建、工业生产及自动驾驶等多个真实性场景。
+\end{abstract}
+
+\begin{abstract*}
+	\par The real-time three-dimensional reconstruction and semantic segmentation system for dynamic range scenes are gradually becoming the focus of research in the fields of intelligent robotics and 3D reconstruction. However, most existing systems are primarily designed for non-real-time, complete reconstruction of fixed-range scenes. These systems require reading all data before reconstruction, making them unable to process continuous video streams in real-time. Additionally, they have limited reconstruction ranges, failing to handle objects beyond the predefined scope. Regardless of the extent of scene changes, the entire scene needs to be reprocessed each time, and their slow reconstruction speed hinders prompt responses to input data. These issues greatly hinder the widespread application of intelligent robots.
+
+	\par Addressing these problems, this thesis designs and develops a real-time 3D reconstruction and semantic segmentation system based on RGB-D cameras. The system employs an efficient point cloud semantic segmentation algorithm that transforms the process of semantic fusion and updating into a Linear Assignment Problem, decoupling it from the point cloud generation process, thus achieving real-time semantic segmentation. Incorporating the concept of spatial grids, the paper utilizes an overlapping spatial grid approach to partition the scene space, enabling incremental reconstruction of dynamic range scenes. Moreover, the entire process of point cloud generation, semantic fusion, and updating is migrated to a Graphics Processing Unit, significantly enhanced the processing speed.
+	
+	\par The system comprises functionalities such as data acquisition, pose estimation, semantic segmentation, point cloud generation, semantic fusion, and real-time visualization. Initially, the system employs an RGB-D camera to capture RGB images and depth maps. A pre-trained kMaX-DeepLab (k-Means Mask Transformer) model is used for semantic segmentation of RGB images, and camera pose estimation is accomplished using epipolar geometry algorithms. Subsequently, the Truncated Signed Distance Function algorithm generates point cloud data while integrating a linear assignment method for semantic fusion and updating of point cloud data. This process is visualized in real-time. Finally, the generated point cloud model undergoes post-processing steps such as filtering, noise reduction, downsampling, and surface reconstruction before being exported as point cloud data files in mainstream formats.
+	
+	\par The system exhibits the capability to rapidly, efficiently, and flexibly process large-scale scenes. It performs real-time, incremental three-dimensional reconstruction and semantic segmentation for dynamic range scenes while maintaining high reconstruction accuracy. The system finds applications in various real-world scenarios including indoor reconstruction, industrial production, and autonomous driving.
+\end{abstract*}

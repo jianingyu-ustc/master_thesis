@@ -1,0 +1,52 @@
+\subsection{模型导入导出模块}
+
+\par 每当需要加载一个新的模型时，首先调用\texttt{Space}类的\texttt{LoadCloud}函数，将通过文件读取接口打开
+指定的点云模型文件，然后解析PLY文件头部，获取其中的关键信息，如格式、元素类型、属性等。接
+下来，文件读取接口会解析文件的数据部分，提取每个顶点的坐标、RGB值以及类别标签，存入
+\texttt{point\_list}数组中。最后，关闭文件，完成模型的导入。
+
+\par 以上步骤完成后，系统便完成了模型的导入过程，可以使用导入的模型进行后续的三维重建和语
+义分割工作。
+
+\begin{algorithm}[htbp]
+    \SetAlgoLined
+    \KwData{场景序号 scene\_id, 点云结构体数组 point\_list}
+	\KwResult{模型文件 file}
+    $\textit{file\_name} \gets \text{'../pred/'} + \textit{scene\_id} + \text{'.ply'}$\;
+    $\textit{file} \gets \text{open}(\textit{file\_name}, \text{'w'})$\;
+
+    $\textit{header} \gets \text{'ply'}$\;
+    $\textit{header} \gets \text{'format binary\_little\_endian 1.0'}$\;
+    $\textit{header} \gets \text{'element vertex'} + \textit{gl\_point\_num}$\;
+    $\textit{header} \gets \text{'property float x'} + \text{'property float y'} + \text{'property float z'}$\;
+    $\textit{header} \gets \text{'property uchar color\_r'} + \text{'property uchar color\_g'} + \text{'property uchar color\_b'}$\;
+    $\textit{header} \gets \text{'property uchar label\_r'} + \text{'property uchar label\_g'} + \text{'property uchar label\_b'}$\;
+    $\textit{header} \gets \text{'property int label'}$\;
+    $\textit{header} \gets \text{'element face 7'}$\;
+    $\textit{header} \gets \text{'end\_header'}$\;
+    $\text{write\_to\_file}(\textit{file}, \textit{header})$\;
+
+    \For{$point\_list$ 中的每个点 $\textit{p}$}{
+        使用 $\textit{pose}$ 计算变换后的坐标 $\textit{x, y, z}$\;
+        $\text{write\_to\_file}(\textit{file}, \textit{x, y, z})$\;
+        从 $\textit{p}$ 中获取并缩放RGB值 $\textit{color\_r, color\_g, color\_b}$\;
+        $\text{write\_to\_file}(\textit{file}, \textit{color\_r, color\_g, color\_b})$\;
+        $\textit{label} \gets \textit{p}$ 的标签\;
+        $\text{write\_to\_file}(\textit{file}, \textit{label})$\;
+        根据 $\textit{label}$ 检索标签对应的 RGB 值 $\textit{label\_r, label\_g, label\_b}$\;
+        $\text{write\_to\_file}(\textit{file}, \textit{label\_r, label\_g, label\_b})$\;
+    }
+    \caption{SaveCloud}
+    \label{algo:SaveCloud}
+\end{algorithm}
+
+\par 在系统运行过程中，可能需要将处理后的模型导出到文件，以便于保存结果或用于其他应用。
+此时，可以调用\texttt{Space}类的\texttt{SaveCloud}函数，伪代码如算法\ref{algo:SaveCloud}所示。它主要负责将点云数据存储到一个PLY文件中。首先，
+通过拼接路径和场景序号来定义文件名。然后，打开这个文件进行写操作。先写入PLY文件的头部信息，
+接着，函数通过遍历点云数组\texttt{point\_list}来写入每一个点的信息。每个点的信息包括全局坐标（通过
+系统坐标和位姿矩阵运算得到）、RGB值以及类别标签。在写入语义信息的同时，根据标签值，
+函数会将对应的颜色编码写入文件，这个编码由ScanNet定义。最后，关闭文件，完成模型的导出。导入导出的时序图如图\ref{fig:sequence7}所示。
+
+\par 该模块通过灵活的接口，有效地支持了系统的运行。通过这个模块，系统可以方便地
+处理各种点云格式的输入输出，同时保证了几何信息和语义信息的一致性和完整性，提高了系统
+的灵活性和实用性。

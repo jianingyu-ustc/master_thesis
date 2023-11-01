@@ -1,0 +1,40 @@
+% !TeX encoding = UTF-8
+% !TeX program = xelatex
+% !TeX spellcheck = en_US
+
+\documentclass[degree=master, degree-type=professional, language=chinese, fontset=auto]{ustcthesis}
+
+\input{ustcsetup.tex}
+
+\begin{document}
+
+\maketitle
+\copyrightpage
+
+\frontmatter
+\input{chapters/0_foreword/abstract.tex}
+\tableofcontents
+\listoffigures
+\listoftables
+
+\mainmatter
+\renewcommand{\arraystretch}{1.3}
+\input{chapters/1_introduction/introduction.tex}
+\input{chapters/2_technology_involved/technology_involved.tex}
+\input{chapters/3_demand_analysis/demand_analysis.tex}
+\input{chapters/4_outline_design/outline_design.tex}
+\input{chapters/5_detailed_design/detailed_design.tex}
+\input{chapters/7_system_test/test.tex}
+\input{chapters/8_afterword/summarize.tex}
+\input{chapters/8_afterword/complementary.tex}
+\input{chapters/8_afterword/acknowledgements.tex}
+
+% 其他
+% \input{chapters/8_afterword/publications.tex}
+% \input{chapters/0_foreword/notation.tex}
+% \input{chapters/9_other_materials/citations.tex}
+% \input{chapters/9_other_materials/math.tex}
+% \input{chapters/9_other_materials/floats.tex}
+
+\bibliography{chapters/9_other_materials/ustc}  % 参考文献使用 BibTeX 编译
+\end{document}
